@@ -1,0 +1,11 @@
+---
+- name: Apply configlets
+  hosts: cvp1
+
+  vars_files:
+    - ../vars/CVP_Model.yml
+    - ../vars/vault_un.yml
+  tasks:
+    - name: Apply configlets
+      arista.cvp.cv_device_v3:
+        devices: "{{ cvaas_devices }}"

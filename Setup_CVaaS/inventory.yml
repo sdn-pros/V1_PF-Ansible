@@ -1,0 +1,16 @@
+---
+all:
+  children:
+    cvaas:
+      vars:
+      hosts: 
+        cvp1:
+          ansible_host: www.arista.io
+          # Username is *always* cvaas when using tokens. The unique token will map to the correct tenant
+          ansible_user: cvaas
+          ansible_connection: httpapi
+          ansible_httpapi_use_ssl: True
+          ansible_httpapi_validate_certs: True
+          ansible_network_os: eos
+          ansible_httpapi_port: 443
+          ansible_password: "{{ cvaas_token }}"
