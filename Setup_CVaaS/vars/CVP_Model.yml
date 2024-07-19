@@ -184,16 +184,16 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'Leaf22-BASE'
-  - fqdn: P1
+  - fqdn: P5
     parentContainerName: WAN
     configlets:
       - 'ATD-INFRA'
-      - 'P1-BASE'
-  - fqdn: P2
+      - 'P5-BASE'
+  - fqdn: P6
     parentContainerName: WAN
     configlets:
       - 'ATD-INFRA'
-      - 'P2-BASE'
+      - 'P6-BASE'
   - fqdn: P10
     parentContainerName: WAN
     configlets:
@@ -214,6 +214,36 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'P21-BASE'
+  - fqdn: R1-PE1
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'R1-PE1-BASE'
+  - fqdn: R2-PE2
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'R2-PE2-BASE'
+  - fqdn: P1
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'P1-BASE'
+  - fqdn: P2
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'P2-BASE'
+  - fqdn: P3
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'P3-BASE'
+  - fqdn: P4
+    parentContainerName: WAN
+    configlets:
+      - 'ATD-INFRA'
+      - 'P4-BASE'
   - fqdn: PE1
     parentContainerName: WAN
     configlets:
@@ -224,46 +254,16 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'PE2-BASE'
-  - fqdn: PE11
+  - fqdn: PE3
     parentContainerName: WAN
     configlets:
       - 'ATD-INFRA'
-      - 'PE11-BASE'
-  - fqdn: PE12
+      - 'PE3-BASE'
+  - fqdn: PE4
     parentContainerName: WAN
     configlets:
       - 'ATD-INFRA'
-      - 'PE12-BASE'
-  - fqdn: PE21
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'PE21-BASE'
-  - fqdn: PE22
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'PE22-BASE'
-  - fqdn: R1-P11
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'R1-P11-BASE'
-  - fqdn: R1-P12
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'R1-P12-BASE'
-  - fqdn: R2-P31
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'R2-P31-BASE'
-  - fqdn: R2-P32
-    parentContainerName: WAN
-    configlets:
-      - 'ATD-INFRA'
-      - 'R2-P32-BASE'
+      - 'PE4-BASE'
   - fqdn: RR
     parentContainerName: WAN
     configlets:
