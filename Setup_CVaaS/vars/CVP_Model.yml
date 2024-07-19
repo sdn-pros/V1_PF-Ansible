@@ -195,32 +195,32 @@ cvaas_devices:
       - 'ATD-INFRA'
       - 'P6-BASE'
   - fqdn: P10
-    parentContainerName: WAN
+    parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'P10-BASE'
   - fqdn: P11
-    parentContainerName: WAN
+    parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'P11-BASE'
   - fqdn: P20
-    parentContainerName: WAN
+    parentContainerName: Region2
     configlets:
       - 'ATD-INFRA'
       - 'P20-BASE'
   - fqdn: P21
-    parentContainerName: WAN
+    parentContainerName: Region2
     configlets:
       - 'ATD-INFRA'
       - 'P21-BASE'
   - fqdn: R1-PE1
-    parentContainerName: WAN
+    parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'R1-PE1-BASE'
   - fqdn: R2-PE2
-    parentContainerName: WAN
+    parentContainerName: Region2
     configlets:
       - 'ATD-INFRA'
       - 'R2-PE2-BASE'
