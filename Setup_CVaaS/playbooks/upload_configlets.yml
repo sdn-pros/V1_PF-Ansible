@@ -4,7 +4,7 @@
 
   vars_files:
     - ../vars/CVP_Model.yml
-    - ../vars/vault_un.yml
+    
   tasks:
     - name: Upload configlets
       arista.cvp.cv_configlet_v3:
