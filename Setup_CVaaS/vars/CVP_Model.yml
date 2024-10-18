@@ -49,6 +49,19 @@ cvaas_configlets:
   RR4-BASE: "{{ lookup('file', '../configlets/RR4-BASE.cfg') }}"
   RR5-BASE: "{{ lookup('file', '../configlets/RR5-BASE.cfg') }}"
   RR6-BASE: "{{ lookup('file', '../configlets/RR6-BASE.cfg') }}"
+  Edge10-CVP: "{{ lookup('file', '../configlets/Edge10-CVP.cfg') }}"
+  Edge11-CVP: "{{ lookup('file', '../configlets/Edge11-CVP.cfg') }}"
+  Edge12-CVP: "{{ lookup('file', '../configlets/Edge12-CVP.cfg') }}"
+  Edge13-CVP: "{{ lookup('file', '../configlets/Edge13-CVP.cfg') }}"
+  Edge14-CVP: "{{ lookup('file', '../configlets/Edge14-CVP.cfg') }}"
+  ISP-1-CVP: "{{ lookup('file', '../configlets/ISP-1-CVP.cfg') }}"
+  Leaf11-CVP: "{{ lookup('file', '../configlets/Leaf11-CVP.cfg') }}"
+  Leaf12-CVP: "{{ lookup('file', '../configlets/Leaf12-CVP.cfg') }}"
+  R1-PE1-CVP: "{{ lookup('file', '../configlets/R1-PE1-CVP.cfg') }}"
+  P10-CVP: "{{ lookup('file', '../configlets/P10-CVP.cfg') }}"
+  P11-CVP: "{{ lookup('file', '../configlets/P11-CVP.cfg') }}"
+  RR1-CVP: "{{ lookup('file', '../configlets/RR1-CVP.cfg') }}"
+  RR2-CVP: "{{ lookup('file', '../configlets/RR2-CVP.cfg') }}"  
 
 cvaas_containers:
   Region1:
@@ -64,26 +77,31 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'Edge10-BASE'
+      - 'Edge10-CVP'
   - fqdn: Edge11
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'Edge11-BASE'
+      - 'Edge11-CVP'
   - fqdn: Edge12
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'Edge12-BASE'
+      - 'Edge12-CVP'
   - fqdn: Edge13
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'Edge13-BASE'
+      - 'Edge13-CVP'
   - fqdn: Edge14
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'Edge14-BASE'
+      - 'Edge14-CVP'
   - fqdn: Edge20
     parentContainerName: Region2
     configlets:
@@ -154,6 +172,7 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'ISP-1-BASE'
+      - 'ISP-1-CVP'
   - fqdn: ISP-2
     parentContainerName: Region2
     configlets:
@@ -169,11 +188,13 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'Leaf11-BASE'
+      - 'Leaf11-CVP'
   - fqdn: Leaf12
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'Leaf12-BASE'
+      - 'Leaf12-CVP'
   - fqdn: Leaf21
     parentContainerName: Region2
     configlets:
@@ -199,11 +220,13 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'P10-BASE'
+      - 'P10-CVP'
   - fqdn: P11
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'P11-BASE'
+      - 'P11-CVP'
   - fqdn: P20
     parentContainerName: Region2
     configlets:
@@ -274,11 +297,13 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'RR1-BASE'
+      - 'RR1-CVP'
   - fqdn: RR2
     parentContainerName: Region1
     configlets:
       - 'ATD-INFRA'
       - 'RR2-BASE'
+      - 'RR2-CVP'
   - fqdn: RR3
     parentContainerName: Region2
     configlets:
