@@ -242,6 +242,7 @@ cvaas_devices:
     configlets:
       - 'ATD-INFRA'
       - 'R1-PE1-BASE'
+      - 'R1-PE1-CVP'
   - fqdn: R2-PE2
     parentContainerName: Region2
     configlets:
